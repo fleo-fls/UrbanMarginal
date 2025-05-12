@@ -9,6 +9,10 @@ public class Joueur extends Objet {
 	 */
 	private static final int MAXVIE = 10 ;
 	/**
+	 * Vie actuelle du joueur
+	 */
+	private int vieActuelle = MAXVIE;
+	/**
 	 * gain de points de vie lors d'une attaque
 	 */
 	private static final int GAIN = 1 ; 
@@ -73,7 +77,10 @@ public class Joueur extends Objet {
 	 */
 	private void deplace() { 
 	}
-
+	/**
+	 * Orientation du joueur (true = droite, false = gauche)
+	 */
+	private boolean orientation;
 	/**
 	 * Contrôle si le joueur touche un des autres joueurs
 	 * @return true si deux joueurs se touchent
@@ -81,7 +88,13 @@ public class Joueur extends Objet {
 	private Boolean toucheJoueur() {
 		return null;
 	}
-
+	/**
+	 * Contrôle si le joueur touche un Mur
+	 * @return true si le joueur touche le mur
+	 */
+	private Boolean toucheMur() {
+		return null;
+	}
 	/**
 	 * Gain de points de vie après avoir touché un joueur
 	 */

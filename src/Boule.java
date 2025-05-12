@@ -20,5 +20,13 @@ public class Boule extends Objet {
 	 */
 	public void tireBoule() {
 	}
+
+	public JeuServeur getJeuServeur() {
+		return jeuServeur;
+	}
+
+	public void setJeuServeur(JeuServeur jeuServeur) {
+		this.jeuServeur = jeuServeur;
+	}
 	
 }
